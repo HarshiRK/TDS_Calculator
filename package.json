@@ -1,0 +1,14 @@
+{
+  "name": "tds-calculator-workspace",
+  "version": "1.0.0",
+  "description": "Workspace for TDS Calculator - Professional Compliance Tool",
+  "scripts": {
+    "backend": "powershell -Command \"$env:PYTHONPATH='.'; & 'C:\\Users\\intel\\AppData\\Local\\Programs\\Python\\Python311\\python.exe' backend/app.py\"",
+    "frontend": "cd frontend && npm run dev",
+    "streamlit": "streamlit run streamlit_app.py",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
